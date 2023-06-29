@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="920519cf-6186-432a-b9ca-5f2fc82fe621" name="Changes" comment="Create Player class">
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwrf/Pair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwrf/ValueSuitPair.java" afterDir="false" />
+    <list default="true" id="920519cf-6186-432a-b9ca-5f2fc82fe621" name="Changes" comment="Change Pair to ValueSuitPair">
+      <change afterPath="$PROJECT_DIR$/src/main/java/jwrf/CardStringEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jwrf/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwrf/Card.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688006109091</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Change Pair to ValueSuitPair">
+      <created>1688036130506</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688036130506</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +107,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create Player class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Player class" />
+    <MESSAGE value="Change Pair to ValueSuitPair" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change Pair to ValueSuitPair" />
   </component>
 </project>
