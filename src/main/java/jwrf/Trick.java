@@ -1,13 +1,17 @@
 package jwrf;
 
 /**
- * Class which represents a 'trick', i.e a round of play in bridge.
+ * Class which represents a 'trick', i.e a round of play in bridge where each of the four players
+ * place one card.
  */
 public class Trick {
 
     private Card[] cardsInTrick = new Card[4];
 
     private int nextSpotToPlay = 0;
+
+    public Trick() {
+    }
 
     public boolean addCard(Card card) {
         if (nextSpotToPlay >= 4) {
