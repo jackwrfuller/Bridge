@@ -1,2 +1,3 @@
-package jwrf;public enum Suit {
+package jwrf;
+public enum Suit {
 }

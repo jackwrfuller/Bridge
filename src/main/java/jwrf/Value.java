@@ -1,2 +1,3 @@
-package jwrf;public enum Value {
+package jwrf;
+public enum Value {
 }

@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="920519cf-6186-432a-b9ca-5f2fc82fe621" name="Changes" comment="Create Player class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/jwrf/Trick.java" afterDir="false" />
+    <list default="true" id="920519cf-6186-432a-b9ca-5f2fc82fe621" name="Changes" comment="Allow a Player to receive a card">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jwrf/Suit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwrf/Suit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jwrf/Value.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwrf/Value.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687575002777</updated>
-      <workItem from="1688004672724" duration="2321000" />
+      <workItem from="1688004672724" duration="3023000" />
     </task>
     <task id="LOCAL-00001" summary="Create Player class">
       <created>1688006109090</created>
@@ -88,7 +90,28 @@
       <option name="project" value="LOCAL" />
       <updated>1688006109091</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Create Trick class">
+      <created>1688007192343</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688007192343</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update Card toString()">
+      <created>1688007405745</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688007405745</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Allow a Player to receive a card">
+      <created>1688007803867</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688007803867</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,6 +119,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create Player class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Player class" />
+    <MESSAGE value="Create Trick class" />
+    <MESSAGE value="Update Card toString()" />
+    <MESSAGE value="Allow a Player to receive a card" />
+    <option name="LAST_COMMIT_MESSAGE" value="Allow a Player to receive a card" />
   </component>
 </project>
