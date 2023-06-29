@@ -19,20 +19,20 @@ public enum Value {
     THREE("3"),
     TWO("2");
 
-    private String stringRep;
+    private final String stringRep;
     private static final Map<String, Value> ENUM_MAP;
 
     Value(String c) {
         this.stringRep = c;
     }
 
-    public String getName() {
+    public String getStringName() {
         return stringRep;
     }
     static {
-        Map<String, Value> mapBetweenLetterAndSuit = new HashMap<String, Value>();
+        Map<String, Value> mapBetweenLetterAndSuit = new HashMap<>();
         for (Value instance : Value.values()) {
-            mapBetweenLetterAndSuit.put(instance.getName(), instance);
+            mapBetweenLetterAndSuit.put(instance.getStringName(), instance);
         }
         ENUM_MAP = Collections.unmodifiableMap(mapBetweenLetterAndSuit);
     }

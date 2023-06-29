@@ -32,4 +32,34 @@ class CardTest {
             assertEquals(cardString, card.toString());
         }
     }
+
+    @Test
+    void testCardSuitAndValue() {
+        Card card = new Card("10D");
+        assertEquals(Suit.DIAMOND, card.suit());
+        assertEquals(Value.TEN, card.value());
+        card = new Card("10H");
+        assertEquals(Suit.HEARTS, card.suit());
+        assertEquals(Value.TEN, card.value());
+        card = new Card("10S");
+        assertEquals(Suit.SPADES, card.suit());
+        assertEquals(Value.TEN, card.value());
+        card = new Card("10C");
+        assertEquals(Suit.CLUBS, card.suit());
+        assertEquals(Value.TEN, card.value());
+
+        card = new Card("5S");
+        assertEquals(Suit.SPADES, card.suit());
+        assertEquals(Value.FIVE, card.value());
+        card = new Card("5H");
+        assertEquals(Suit.HEARTS, card.suit());
+        assertEquals(Value.FIVE, card.value());
+        card = new Card("5D");
+        assertEquals(Suit.DIAMOND, card.suit());
+        assertEquals(Value.FIVE, card.value());
+        card = new Card("5C");
+        assertEquals(Suit.CLUBS, card.suit());
+        assertEquals(Value.FIVE, card.value());
+
+    }
 }

@@ -8,6 +8,6 @@ public record Card(Value value, Suit suit) {
 
     @Override
     public String toString() {
-        return value.toString() + suit.toString();
+        return value.getStringName() + suit.getName();
     }
 }

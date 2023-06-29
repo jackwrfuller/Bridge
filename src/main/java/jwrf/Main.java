@@ -2,6 +2,11 @@ package jwrf;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        Card c1 = new Card("10H");
+
+
+
+        System.out.println(c1);
     }
 }
