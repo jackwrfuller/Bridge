@@ -1,17 +1,17 @@
 package jwrf;
 
-public class Pair<X, Y> {
-    final X x;
-    final Y y;
+public class ValueSuitPair<Value, Suit> {
+    final Value value;
+    final Suit suit;
 
-    public Pair(X x, Y y) {
-        this.x = x;
-        this.y = y;
+    public ValueSuitPair(Value value, Suit suit) {
+        this.value = value;
+        this.suit = suit;
     }
-    public X getFirst() {
-        return this.x;
+    public Value getValue() {
+        return this.value;
     }
-    public Y getSecond() {
-        return this.y;
+    public Suit getSuit() {
+        return this.suit;
     }
 }

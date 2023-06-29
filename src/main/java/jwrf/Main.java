@@ -1,4 +1,6 @@
-package jwrf;public class Main {
+package jwrf;
+
+public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
     }
