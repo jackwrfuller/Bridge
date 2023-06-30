@@ -3,10 +3,11 @@ package jwrf;
 public class Main {
     public static void main(String[] args) {
 
-        Card c1 = new Card("10H");
+        CardDeck deck = new CardDeck();
 
 
 
-        System.out.println(c1);
+
+        System.out.println(deck);
     }
 }
