@@ -1,9 +1,6 @@
 package jwrf;
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.Stack;
+import java.util.*;
 
 public class CardDeck {
 
@@ -30,6 +27,10 @@ public class CardDeck {
         shuffle();
     }
 
+    public int size() {
+        return cardDeck.size();
+    }
+
     public void shuffle(){
         Collections.shuffle(cardDeck);
     }
@@ -38,7 +39,7 @@ public class CardDeck {
         return cardDeck.pop();
     }
 
-    public void addCardsToDeck(Set<Card> cards) {
+    public void addCardsToDeck(LinkedHashSet<Card> cards) {
         for (Card card : cards) {
             cardDeck.push(card);
         }
@@ -48,8 +49,8 @@ public class CardDeck {
         addCardsToDeck(getCardsInADeckFromString(cardStrings));
     }
 
-    private static Set<Card> getCardsInADeckFromString(String[] cardStrings) {
-        Set<Card> deck = new HashSet<>();
+    private static LinkedHashSet<Card> getCardsInADeckFromString(String[] cardStrings) {
+        LinkedHashSet<Card> deck = new LinkedHashSet<>();
         for (String cardString : cardStrings) {
             deck.add(new Card(cardString));
         }
@@ -68,11 +69,15 @@ public class CardDeck {
 
     @Override
     public String toString() {
+        if (cardDeck.size() == 0) {
+            return "";
+        }
         StringBuilder deckString = new StringBuilder();
         for (Card card : cardDeck) {
             deckString.append(card.toString());
             deckString.append(" ");
         }
+        deckString.deleteCharAt(deckString.length() - 1);
         return deckString.toString();
     }
 
