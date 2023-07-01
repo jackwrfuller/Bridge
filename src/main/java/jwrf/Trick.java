@@ -13,6 +13,10 @@ public class Trick {
     public Trick() {
     }
 
+    public int numberPlayed() {
+        return nextSpotToPlay;
+    }
+
     public boolean addCard(Card card) {
         if (nextSpotToPlay >= 4) {
             return false;
@@ -22,12 +26,12 @@ public class Trick {
         return true;
     }
 
-    public Card getCard(int position) {
-        assert (position >= 0 && position <= 3) : "Invalid position: " + position + ", must be between 0 and 3";
-        if (position >= nextSpotToPlay) {
+    public Card getCard(int index) {
+        //assert (index >= 0 && index <= 3) : "Invalid position: " + index + ", must be between 0 and 3";
+        if (index >= nextSpotToPlay || index < 0 || index > 3) {
             return null; // Card in this position has not been placed yet
         }
-        return cardsInTrick[nextSpotToPlay];
+        return cardsInTrick[index];
     }
 
     @Override

@@ -4,22 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="920519cf-6186-432a-b9ca-5f2fc82fe621" name="Changes" comment="Allow Cards to be constructed using a card string">
+    <list default="true" id="920519cf-6186-432a-b9ca-5f2fc82fe621" name="Changes" comment="Change Pair to ValueSuitPair">
+      <change afterPath="$PROJECT_DIR$/src/test/java/jwrf/TrickTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwrf/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwrf/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwrf/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwrf/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwrf/Value.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwrf/Value.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/jwrf/CardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/jwrf/CardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jwrf/Trick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwrf/Trick.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="C:\Users\User\Desktop\SWE\Bridge\htmlReport" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -37,34 +39,49 @@
     </option>
   </component>
   <component name="ProjectId" id="2RdLRPXoLnd0ktEc5bbFgtTEZMO" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "coverage",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.CardTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jwrf.Main" />
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="jwrf" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All Tests">
+    <configuration name="All Tests" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="Bridge" />
-      <extension name="coverage">
+      <extension name="coverage" sample_coverage="false">
         <pattern>
           <option name="PATTERN" value="jwrf.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="jwrf" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -79,6 +96,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="jwrf" />
       <option name="MAIN_CLASS_NAME" value="jwrf.CardTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -100,7 +118,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CardTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TrickTest.addCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Bridge" />
       <extension name="coverage">
         <pattern>
@@ -109,19 +127,52 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="jwrf" />
-      <option name="MAIN_CLASS_NAME" value="jwrf.CardTest" />
-      <option name="METHOD_NAME" value="testToString" />
+      <option name="MAIN_CLASS_NAME" value="jwrf.TrickTest" />
+      <option name="METHOD_NAME" value="addCard" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TrickTest.getCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bridge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jwrf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jwrf" />
+      <option name="MAIN_CLASS_NAME" value="jwrf.TrickTest" />
+      <option name="METHOD_NAME" value="getCard" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="Bridge" />
+      <extension name="coverage" sample_coverage="false" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.TrickTest.addCard" />
+      <item itemvalue="JUnit.TrickTest.getCard" />
+      <item itemvalue="JUnit.CardTest" />
+      <item itemvalue="JUnit.CardTest.testCardSuit" />
+      <item itemvalue="JUnit.All Tests" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All Tests" />
+        <item itemvalue="JUnit.TrickTest.getCard" />
+        <item itemvalue="JUnit.TrickTest.addCard" />
         <item itemvalue="JUnit.CardTest" />
         <item itemvalue="JUnit.CardTest.testCardSuit" />
-        <item itemvalue="JUnit.CardTest.testToString" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -135,6 +186,7 @@
       <updated>1687575002777</updated>
       <workItem from="1688004672724" duration="3023000" />
       <workItem from="1688075974732" duration="2044000" />
+      <workItem from="1688170826552" duration="1241000" />
     </task>
     <task id="LOCAL-00001" summary="Create Player class">
       <created>1688006109090</created>
@@ -192,5 +244,10 @@
     <MESSAGE value="." />
     <MESSAGE value="Allow Cards to be constructed using a card string" />
     <option name="LAST_COMMIT_MESSAGE" value="Allow Cards to be constructed using a card string" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Bridge$All_Tests.ic" NAME="All Tests Coverage Results" MODIFIED="1688171995050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>jwrf.*</FILTER>
+    </SUITE>
   </component>
 </project>
