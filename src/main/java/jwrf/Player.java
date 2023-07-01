@@ -18,11 +18,16 @@ public class Player {
         return true;
     }
 
+    public int numberCardsInHand() {
+        return cardsInHand.size();
+    }
+
+    public void clearHand() {
+        cardsInHand.clear();
+    }
+
     private boolean isValidDeal(Card card) {
-        if (cardsInHand.size() >= 13 || cardsInHand.contains(card)) {
-            return false;
-        }
-        return true;
+        return cardsInHand.size() < 13 && !cardsInHand.contains(card);
     }
 
 }
