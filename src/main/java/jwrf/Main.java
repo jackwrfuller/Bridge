@@ -5,8 +5,7 @@ public class Main {
 
         CardDeck deck = new CardDeck();
 
-
-
+        System.out.println("test");
 
         System.out.println(deck);
     }
