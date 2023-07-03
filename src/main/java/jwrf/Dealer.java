@@ -14,19 +14,16 @@ public class Dealer {
     public Dealer(List<Player> players) {
         this.players = players;
     }
-
     public void newHand() {
         clearHands();
         deck = new CardDeck();
         distributeDeck();
     }
-
     public void clearHands() {
         for (Player p : players) {
             p.clearHand();
         }
     }
-
     private void distributeDeck() {
         // Will look to change to implementing with circular array for players and
         // iterator version of CardDeck
