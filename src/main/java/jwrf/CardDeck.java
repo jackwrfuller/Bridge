@@ -2,7 +2,7 @@ package jwrf;
 
 import java.util.*;
 
-public class CardDeck {
+public class CardDeck implements Iterable<Card>{
 
     private Stack<Card> cardDeck = new Stack<>();
 
@@ -26,29 +26,21 @@ public class CardDeck {
         addDefaultDeck();
         shuffle();
     }
-
-    public int size() {
-        return cardDeck.size();
+    private void addDefaultDeck() {
+        clearDeck();
+        addCardsToDeck(getCardsInADeckFromString(cardStringsInADeck));
     }
-
     public void shuffle(){
         Collections.shuffle(cardDeck);
     }
-
-    public Card deal(){
-        return cardDeck.pop();
+    public void clearDeck() {
+        cardDeck.clear();
     }
-
     public void addCardsToDeck(LinkedHashSet<Card> cards) {
         for (Card card : cards) {
             cardDeck.push(card);
         }
     }
-
-    public void addCardsToDeck(String[] cardStrings) {
-        addCardsToDeck(getCardsInADeckFromString(cardStrings));
-    }
-
     private static LinkedHashSet<Card> getCardsInADeckFromString(String[] cardStrings) {
         LinkedHashSet<Card> deck = new LinkedHashSet<>();
         for (String cardString : cardStrings) {
@@ -57,15 +49,17 @@ public class CardDeck {
         return deck;
     }
 
-    private void addDefaultDeck() {
-        clearDeck();
-        addCardsToDeck(getCardsInADeckFromString(cardStringsInADeck));
+    public int size() {
+        return cardDeck.size();
     }
 
-    public void clearDeck() {
-        cardDeck.clear();
+    public Card deal(){
+        return cardDeck.pop();
     }
 
+    public void addCardsToDeck(String[] cardStrings) {
+        addCardsToDeck(getCardsInADeckFromString(cardStrings));
+    }
 
     @Override
     public String toString() {
@@ -80,5 +74,22 @@ public class CardDeck {
         deckString.deleteCharAt(deckString.length() - 1);
         return deckString.toString();
     }
+
+    @Override
+    public Iterator<Card> iterator() {
+        return new CardDeckIterator();
+    }
+
+    class CardDeckIterator implements Iterator<Card> {
+        private int index = 0;
+
+        public boolean hasNext() {
+            return index < size();
+        }
+        public Card next() {
+            return cardDeck.get(index++);
+        }
+    }
+
 
 }

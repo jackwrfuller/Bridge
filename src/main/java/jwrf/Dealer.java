@@ -34,7 +34,6 @@ public class Dealer {
             currentPlayer.receiveCard(deck.deal());
             currentPlayerToDeal = (currentPlayerToDeal + 1) % players.size();
         }
-
     }
 
 
