@@ -5,8 +5,9 @@ package jwrf;
  * place one card.
  */
 public class Trick {
+    private static final int CARDS_PER_TRICK = 4;
 
-    private Card[] cardsInTrick = new Card[4];
+    private Card[] cardsInTrick = new Card[CARDS_PER_TRICK];
 
     private int nextSpotToPlay = 0;
 
@@ -18,7 +19,7 @@ public class Trick {
     }
 
     public boolean addCard(Card card) {
-        if (nextSpotToPlay >= 4) {
+        if (nextSpotToPlay >= CARDS_PER_TRICK) {
             return false;
         }
         cardsInTrick[nextSpotToPlay] = card;
@@ -28,7 +29,7 @@ public class Trick {
 
     public Card getCard(int index) {
         //assert (index >= 0 && index <= 3) : "Invalid position: " + index + ", must be between 0 and 3";
-        if (index >= nextSpotToPlay || index < 0 || index > 3) {
+        if (index >= nextSpotToPlay || index < 0 || index > CARDS_PER_TRICK - 1) {
             return null; // Card in this position has not been placed yet
         }
         return cardsInTrick[index];
