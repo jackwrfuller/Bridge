@@ -54,4 +54,14 @@ class TrickTest {
         assertNull(trick.getCard(5));
 
     }
+    @Test
+    void testStringEncoding() {
+        Trick trick = new Trick();
+        trick.addCard(new Card("2S"));
+        trick.addCard(new Card("3H"));
+        trick.addCard(new Card("4D"));
+        trick.addCard(new Card("5C"));
+
+        assertEquals("2S-3H-4D-5C", trick.toString());
+    }
 }
